@@ -30,6 +30,3 @@ def chat_response():
     character = request.form['character']
     response = f"Response from {character}: {message}"  # Placeholder response logic
     return jsonify({'response': response})
-
-if __name__ == '__main__':
-    app.run(debug=True)
